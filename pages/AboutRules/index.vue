@@ -66,7 +66,12 @@
                     </div>
                     <div style="margin-top: 20px;">
                         NOTE: <span style="font-style: italic;">Short amusing bits and pieces and short conclusions are not allowed. And stick to the web site's theme, don't use it for writing normal articles.</span>
-                    </div>                   
+                    </div>
+                    <div style="margin-top: 20px;">
+                        USAGE: <span style="font-style: italic;">
+                            The images and other media used in this website is governed by 'Fair Use' doctrine – for the purpose of criticism or review.
+                        </span>
+                    </div>                    
         		</div>
         	</div>
   		</div>  		
