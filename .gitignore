@@ -36,7 +36,10 @@ sw.*
 dist
 node_modules
 .env
+.env.prod
+env
 static/config.env.js
 report
 report*
+report.*
 

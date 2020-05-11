@@ -15,7 +15,13 @@ yarn-error.log*
 *.ntvs*
 *.njsproj
 *.sln
-dist
 node_modules/
+dist
+node_modules
 .env
+.env.prod
+env
 static/config.env.js
+report
+report*
+report.*
