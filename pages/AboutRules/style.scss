@@ -1,0 +1,47 @@
+@import '~assets/css/variables.scss';
+
+.aboutrules {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+
+	* {
+		font-family: 'Roboto', sans-serif;		
+	}
+
+	$newStoryWidth: 640px;
+	&__innerscreen {
+		width: $innerScreen;
+		display: flex;
+		justify-content: center;		
+	}
+
+	&__sectionwrap {
+		margin-top: 30px;
+		margin-bottom: 60px;		
+		width: $newStoryWidth;	
+	}
+
+	&__section {
+		&:not(:first-child) {
+			margin-top: 30px;
+		}
+	}
+
+	&__section-name {
+		& span {
+			font-size: 22px;
+		}
+	}
+
+	&__section-desc {
+		margin-top: 10px;
+		padding: 16px;
+		background-color: #f3f3f3;
+		border-radius: 2px;
+
+		& * {
+			font-family: 'Merriweather', serif;
+		}
+	}
+}

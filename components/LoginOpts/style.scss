@@ -1,0 +1,41 @@
+@import '~assets/css/variables.scss';
+
+.loginopts {
+	padding: 20px;
+	width: 100%;
+
+	display: flex;
+	justify-content: center;
+    align-items: center;  
+
+    &__modaldesc {
+    	width: 100%;
+
+    	display: flex;
+    	flex-flow: column nowrap;
+		justify-content: center;
+	    align-items: center;
+    }
+
+    &__title {
+    	font-size: 27px;
+    }
+
+    &__desc {
+    	font-size: 14px;
+    	margin-top: 2px;
+    }
+
+    &__btns {
+    	margin-top: 40px;
+    	width: 100%;
+    	display: flex;
+		justify-content: center;
+    	align-items: center;
+
+    	& * {
+    		font-family: 'Roboto', sans-serif;
+    	}
+    }
+}
+

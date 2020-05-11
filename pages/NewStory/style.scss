@@ -1,0 +1,169 @@
+@import '~assets/css/variables.scss';
+
+.newstory {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+
+	$newStoryWidth: 640px;
+	&__innerscreen {
+		width: $innerScreen;
+		display: flex;
+		justify-content: center;
+	}
+
+	&__editorwrap {
+		margin-top: 30px;
+		margin-bottom: 60px;		
+		width: $newStoryWidth;
+
+		@media only screen and (max-width: 576px) {
+			width: 100%;
+		}
+	}
+
+	&__filewrap {				
+	}
+
+	&__dagndrop {
+		background-color: rgb(239, 239, 239);
+		height: 400px;
+		padding: 16px;
+		border-radius: 2px;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;		
+	}
+
+	&__inputfile {
+		width: 0.1px;
+		height: 0.1px;
+		opacity: 0;
+		overflow: hidden;
+		position: absolute;
+		z-index: -1;		
+	}
+
+	&__inputfile + label {	        
+	    display: inline-block;
+	    cursor: pointer;
+	}
+
+	&__imagepreviewwrap {
+		width: 100%;		
+		position: relative;				
+	}
+
+	&__imagepreview {
+		width: 100%;
+		border: 1px solid #dcd6d6;		
+
+		& img {
+			width: 100%;
+		}		
+	}
+
+	&__imagetools {	
+		position: absolute;
+		top: 0;	
+		width: 100%;			
+		padding: 3px 7px 2.5px 7px;		
+
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;		
+	}
+
+	&__removeimage {
+		color: white;
+		font-size: 12px;
+		font-family: 'Roboto', sans-serif;
+		padding: 2px 8px;
+    	border-radius: 2px;
+    	background-color: #000000b0;
+    	border: 1px solid white;
+		cursor: pointer;
+	}
+
+	&__titlewrap {
+		margin-top: 24px;
+		width: 100%;			
+	}
+
+	&__title {
+		width: 100%;
+	}	
+
+	&__author, &__author-left{
+		display: flex;
+	}
+
+	&__author {
+		justify-content: space-between;
+		margin-top: 25px;
+		width: 100%;			
+	}
+
+	&__profilepic {
+		height: 35px;
+		width: 35px;
+		border-radius: 100%;
+		overflow: hidden;
+		display: inline-flex;
+	}
+
+	&__profilepic-img {
+		height: 100%; 
+	}
+
+	&__author-details {
+		height: 35px;
+		margin-left: 5px;	
+
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: space-between;
+	}
+
+	&__author-name {
+		font-size: 14px;
+		color: black;
+		font-family: 'Roboto', sans-serif;	
+	}
+
+	&__author-time {
+		font-size: 12px;
+		color: gray;
+		font-family: 'Roboto', sans-serif;
+	}
+
+	&__desc {
+		margin-top: 65px;
+		width: 100%;		
+	}
+
+	&__bottomstrip {
+		margin-top: 75px;
+		display: flex;		
+	}
+
+	&__btn {
+		cursor: pointer;
+		border-radius: 2px;
+		font-family: 'Roboto', sans-serif;
+		font-size: 15px;
+		color: white;
+
+		&.publish {
+			color: white;
+			border: none;
+			background-color: teal;
+			width: 80px;
+		}
+
+		& i {
+			color: white;
+		}
+	}		
+}

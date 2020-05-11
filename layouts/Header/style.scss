@@ -1,0 +1,204 @@
+@import '~assets/css/variables.scss';
+
+.header {
+	height: 50px;
+	width: 100%;
+	background-color: $secondary;	
+	box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+	display: flex;
+	justify-content: center;
+
+	position: fixed;
+	top: 0;
+	z-index: 2;
+
+	@media only screen and (max-width: 576px) {
+		height: 100px;
+	}
+
+	&__innerscreen {
+		width: $innerScreen;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;		
+		padding: 10px 0px;		
+
+		@media only screen and (max-width: 576px) {
+			display: block;
+		}	
+	}
+
+	&__left {				
+	}
+
+	&__right {
+		@media only screen and (max-width: 576px) {
+			margin-top: 9px;		
+			display: flex;
+			align-items: center;
+			justify-content: space-between;			
+		}
+	}
+
+	&__homepage {
+		text-decoration: none;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	&__title {		
+		& span {			
+			font-size: 26px;			
+			font-family: 'Roboto', sans-serif;
+
+			@media only screen and (max-width: 576px) {
+				font-size: 25px;
+			}					
+		}		
+
+		&-part1 {
+			color: white;
+			font-weight: 300;			
+		}
+
+		&-part2 {
+			color: white;					
+			font-weight: 500;
+			margin-left: -4px;	
+		}
+	}
+
+	&__right {
+		display: flex;
+	}
+
+	&__linkswrap {
+		height: 30px;
+		margin-right: 34px;
+		display: flex;
+		align-items: center;
+
+		& * {
+			font-family: 'Roboto', sans-serif;
+			font-size: 14px;
+			color: white;
+
+			@media only screen and (max-width: 576px) {
+				font-size: 13px;
+			}
+		}
+
+		& a {
+			text-decoration: none;
+		}		
+	}
+
+	&__langwrap {
+		height: 30px;
+		margin-right: 34px;
+		display: flex;
+		align-items: center;
+
+		& * {				
+			color: white;
+		}
+	}
+
+	&__user {
+		height: 100%;
+
+		& * {
+			font-family: 'Roboto', sans-serif;
+		}		
+	}
+
+	&__user-login {
+		& button {
+			height: 26px;
+			padding: 1px 14px;
+			background-color: $secondary;
+			color: $quaternary;
+			border: 1px solid $quaternary;
+			border-radius: 3px;
+			font-size: 15px;
+			cursor: pointer;
+		}
+	}
+
+	&__user-afterlogin {
+		width: 30px;
+		position: relative;
+	}
+
+	&__user-picture {
+		width: 30px;
+		height: 30px;
+		overflow: hidden;
+		border-radius: 100%;
+		cursor: pointer;
+
+		& img {
+			width: 100%;		
+		}
+	}
+
+	&__menuwrap {
+		position: absolute;
+		right: 0;
+		top: 40px;		
+
+		&:before {
+		  content: '';
+		  width: 0px;
+		  height: 0px;
+		  border-left: 8px solid transparent;
+  		  border-right: 8px solid transparent;  
+  		  border-bottom: 8px solid white; 		  
+		  
+		  position: absolute;
+		  top: -7px;
+    	  right: 3px;
+    	  z-index: 1;
+		}
+
+		height: auto;
+		width: 240px;
+		background-color: white;
+		border: 1px solid rgb(206, 206, 206);
+		box-shadow: 0 2px 4px rgba(0,0,0,0.16), 0 2px 4px rgba(0,0,0,0.23);
+	}
+
+	&__menu {
+		width: 100%;
+
+		& * {
+			font-size: 14px;						
+			font-family: 'Roboto', sans-serif;
+		}
+	}
+
+	&__menuitem-user {
+		padding: 12px;
+		border-bottom: 1px solid rgb(206, 206, 206);
+
+		& .name {
+			color: rgba(0, 0, 0, 0.84);
+			font-weight: 500;
+		}
+
+		& .email {
+			color: rgba(0, 0, 0, 0.54);			
+		}
+	}
+
+	&__menuitem {
+		padding: 12px;
+		color: rgba(0, 0, 0, 0.54);
+		cursor: pointer;		
+
+		&:hover {
+			color: rgba(0, 0, 0, 0.84);
+		}				
+	}
+}
