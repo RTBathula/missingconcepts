@@ -42,8 +42,8 @@ export default {
     setMetaTags () {
       return {     
         meta: [     
-          { hid: 'og:image', property: 'og:image', content: `${liteEnv.BACKEND_URL}/mc-logo.png` },     
-          { hid: 'twitter:image', name: 'twitter:image', content: `${liteEnv.BACKEND_URL}/mc-logo.png` }          
+          { hid: 'og:image', property: 'og:image', content: `${liteEnv.BACKEND_URL}/logo.png` },     
+          { hid: 'twitter:image', name: 'twitter:image', content: `${liteEnv.BACKEND_URL}/logo.png` }          
         ]
       };
     },
