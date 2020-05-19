@@ -12,6 +12,9 @@ export default {
   components: {
 	    Card	    
   },
+  head () {
+    return this.setMetaTags();
+  },
   created () {
     const langRegion = this.$route.query.langRegion;
     if (langRegion) {
@@ -35,6 +38,14 @@ export default {
   methods: {
     ...mapActions('story', ['listPublicStories']),
     ...mapMutations('story', ['listStoriesPending', 'appendingStoriesPending']),
+    setMetaTags () {
+      return {     
+        meta: [     
+          { hid: 'og:image', property: 'og:image', content: '/mc-logo.png' },     
+          { hid: 'twitter:image', name: 'twitter:image', content: '/mc-logo.png' }          
+        ]
+      };
+    },
     handleScroll (event) {
       const { scrollTop, clientHeight, scrollHeight } = event.target.scrollingElement;
       const contentHeight = scrollHeight - clientHeight;         
