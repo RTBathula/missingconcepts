@@ -5,6 +5,7 @@ import Card from '~/components/Card/index';
 import { debounce } from 'lodash';
 import { setUserLangRegion } from '~/util/cookie';
 import { getUserLangRegPref } from '~/util/lang-region';
+import liteEnv from '~/config/lite-env';
 
 Vue.use(VueMasonry);
 
@@ -41,8 +42,8 @@ export default {
     setMetaTags () {
       return {     
         meta: [     
-          { hid: 'og:image', property: 'og:image', content: '/mc-logo.png' },     
-          { hid: 'twitter:image', name: 'twitter:image', content: '/mc-logo.png' }          
+          { hid: 'og:image', property: 'og:image', content: `${liteEnv.BACKEND_URL}/mc-logo.png` },     
+          { hid: 'twitter:image', name: 'twitter:image', content: `${liteEnv.BACKEND_URL}/mc-logo.png` }          
         ]
       };
     },
