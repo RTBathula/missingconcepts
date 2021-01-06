@@ -20,7 +20,7 @@
   "dependencies": {
     "@vue/eslint-config-standard": "^5.1.2",
     "aws-sdk": "^2.650.0",
-    "axios": "^0.18.1",
+    "axios": "^0.21.1",
     "bcryptjs": "^2.4.3",
     "blueimp-load-image": "^5.1.0",
     "body-parser": "^1.19.0",
